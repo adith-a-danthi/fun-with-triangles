@@ -1,95 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 
 :root {
-    --primary-color: #2B2D42;
-    --secondary-color: #8D99AE;
-    --background-color: white;
-    --accent-color: #ef233c;
+	--primary-color: #2b2d42;
+	--secondary-color: #8d99ae;
+	--background-color: white;
+	--accent-color: #ef233c;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: var(--background-color);
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	color: var(--background-color);
 }
 
-html, body {
-    margin: 0;
+html,
+body {
+	margin: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: var(--accent-color);
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background-color: var(--accent-color);
 }
 
 body:after {
-  content: ' ';
-  border-top: 100vh solid var(--primary-color);
-  border-right: 100vw solid var(--accent-color);
-  position: absolute;
-  z-index: -1;
+	content: " ";
+	border-top: 100vh solid var(--primary-color);
+	border-right: 100vw solid var(--accent-color);
+	position: absolute;
+	z-index: -1;
 }
 
 .card {
-    margin: 0.5em;
-    padding: 1em 2em;
-    border: 1px solid var(--background-color);
-    background-color: rgba(0, 0, 0, 0.6);
+	margin: 0.5em;
+	padding: 1em 2em;
+	border: 1px solid var(--background-color);
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 h1 {
-    font-weight: 700;
-    text-align: center;
+	font-weight: 700;
+	text-align: center;
 }
 
 p {
-    font-size: 1.25em;
+	font-size: 1.25em;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: auto;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-button, .list a {
-    text-decoration: none;
-    text-align: center;
-    margin: 0.5em;
-    padding: 1em 2em;
-    border: 1px solid var(--background-color);
-    background-color: rgba(0, 0, 0, 0.4);
-    font-weight: 900;
-    cursor: pointer;
+button,
+.list a {
+	text-decoration: none;
+	text-align: center;
+	margin: 0.5em;
+	padding: 1em 2em;
+	border: 1px solid var(--background-color);
+	background-color: rgba(0, 0, 0, 0.4);
+	font-weight: 900;
+	cursor: pointer;
 }
 
-button:hover, .list a:hover {
-    background-color: var(--background-color);
-    color: var(--primary-color);
+button:hover,
+.list a:hover {
+	background-color: var(--background-color);
+	color: var(--primary-color);
 }
 
 input {
-    margin: 0.5em;
-    padding: 0.25em;
-    font-size: 1.25em;
-    border: 1px solid var(--background-color);
-    background-color: rgba(0, 0, 0, 0.4);
+	margin: 0.5em;
+	padding: 0.25em;
+	font-size: 1.25em;
+	border: 1px solid var(--background-color);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.areaForm {
+    display: none;
+}
+
+#error {
+    display: none;
 }
 
 .social-icons {
-    width: 30vw;
+	width: 30vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -100,13 +111,13 @@ input {
 .social-icon {
 	height: 2rem;
 	width: 2rem;
-    margin: 0.25em;
+	margin: 0.25em;
 }
 
 .social-icon:hover {
 	border: 1px solid var(--background-color);
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 0.1em;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 0.1em;
 }
 
 @media screen and (max-width: 1200px) {

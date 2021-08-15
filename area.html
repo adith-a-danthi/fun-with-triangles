@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Fun With Triangles</title>
+	</head>
+	<body>
+		<main class="card">
+			<a href="./index.html">&LeftArrow; Back</a>
+			<h1>Area of Triangles</h1>
+			<form>
+				<p>Select how you want to calculate area</p>
+				<div>
+					<label>
+						<input
+							type="radio"
+							id="type1"
+							name="areaCalOption"
+							value="areaCalOption1"
+						/>
+						If you have base and height length
+					</label>
+				</div>
+				<div>
+					<label>
+						<input
+							type="radio"
+							id="type2"
+							name="areaCalOption"
+							value="areaCalOption1"
+						/>
+						If you have length of 3 sides
+					</label>
+				</div>
+				<div>
+					<label>
+						<input
+							type="radio"
+							id="type3"
+							name="areaCalOption"
+							value="areaCalOption1"
+						/>
+						If you have length of 2 sides and included angle
+					</label>
+				</div>
+			</form>
+
+			<div style="margin: 1em" class="areaForm">
+				<form>
+					<div class="row">
+						<label>
+							Breadth
+							<input
+								class="inputType1"
+								type="number"
+								min="0.01"
+								step="0.01"
+								required
+							/>
+						</label>
+
+						<label>
+							Height
+							<input
+								class="inputType1"
+								type="number"
+								min="0.01"
+								step="0.01"
+								required
+							/>
+						</label>
+					</div>
+					<button type="submit">Submit</button>
+					<div>
+						<p class="result"></p>
+					</div>
+				</form>
+			</div>
+			<div style="margin: 1em" class="areaForm">
+				<form>
+					<div class="row">
+						<input
+							class="inputType2"
+							type="number"
+							min="0.01"
+							step="0.01"
+							required
+						/>
+
+						<input
+							class="inputType2"
+							type="number"
+							min="0.01"
+							step="0.01"
+							required
+						/>
+
+						<input
+							class="inputType2"
+							type="number"
+							min="0.01"
+							step="0.01"
+							required
+						/>
+					</div>
+					<button type="submit">Submit</button>
+					<div id="error">
+						<p>
+							Enter valid side lengths. Each side length should be less than sum
+							of the other two lengths.
+						</p>
+					</div>
+					<div>
+						<p class="result"></p>
+					</div>
+				</form>
+			</div>
+			<div style="margin: 1em" class="areaForm">
+				<form>
+					<div class="row">
+						<label>
+							Side 1
+							<input
+								class="inputType3"
+								type="number"
+								min="0.01"
+								step="0.01"
+								required
+							/>
+						</label>
+
+						<label>
+							Side 2
+							<input
+								class="inputType3"
+								type="number"
+								min="0.01"
+								step="0.01"
+								required
+							/>
+						</label>
+						<label>
+							Angle
+							<input
+								class="inputType3"
+								type="number"
+								min="0.01"
+								step="0.01"
+								max="180"
+								required
+							/>
+						</label>
+					</div>
+					<button type="submit">Submit</button>
+					<div>
+						<p class="result"></p>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<div class="social-icons">
+				<a
+					title="GitHub"
+					href="https://github.com/adith-a-danthi"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/github.svg" />
+				</a>
+				<a
+					title="LinkedIn"
+					href="https://www.linkedin.com/in/adith-a-danthi/"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/linkedin.svg" />
+				</a>
+				<a
+					title="Twitter"
+					href="https://twitter.com/adith_danthi"
+					target="_blank"
+				>
+					<img class="social-icon" src="assets/social-icons/twitter.svg" />
+				</a>
+				<a title="Website" href="https://adith.dev" target="_blank">
+					<img class="social-icon" src="assets/social-icons/web.svg" />
+				</a>
+			</div>
+		</footer>
+		<script src="./js/area.js"></script>
+	</body>
+</html>
