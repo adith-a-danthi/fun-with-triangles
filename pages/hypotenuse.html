@@ -4,49 +4,43 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
 		<title>Fun With Triangles</title>
 	</head>
 	<body>
 		<main class="card">
-			<a href="./index.html">&LeftArrow; Back</a>
-			<h1>Angles of Triangles</h1>
-			<p>
-				Enter the angles in below input boxes and we will tell you if those
-				angles make a Triangle.
-			</p>
+			<a href="../index.html">&LeftArrow; Back</a>
+			<h1>Check Hypotenuse</h1>
+			<p>Enter the lengths of the two sides of a right triangle.</p>
 			<form class="form" id="formTriangle">
 				<div class="row">
-					<input
-						class="inputAngle"
-						type="number"
-						min="1"
-						max="180"
-						required
-					/>
-					<input
-						class="inputAngle"
-						type="number"
-						min="1"
-						max="180"
-						required
-					/>
-					<input
-						class="inputAngle"
-						type="number"
-						min="1"
-						max="180"
-						required
-					/>
+					<label
+						>Breadth
+						<input
+							class="inputLength"
+							type="number"
+							min="0.01"
+							step="0.01"
+							required
+					/></label>
+					<label
+						>Height
+						<input
+							class="inputLength"
+							type="number"
+							min="0.01"
+							step="0.01"
+							required
+					/></label>
 				</div>
 				<button id="submitBtn">Submit</button>
-                <div>
-                    <p id="result"></p>
-                </div>
+				<div>
+					<p id="result"></p>
+				</div>
 			</form>
 		</main>
-        <footer>
-            <div class="social-icons">
+		<footer>
+			<div class="social-icons">
 				<a
 					title="GitHub"
 					href="https://github.com/adith-a-danthi"
@@ -72,7 +66,7 @@
 					<img class="social-icon" src="assets/social-icons/web.svg" />
 				</a>
 			</div>
-        </footer>
-        <script src="./js/angles.js"></script>
+		</footer>
+		<script src="../js/hypotenuse.js"></script>
 	</body>
 </html>
