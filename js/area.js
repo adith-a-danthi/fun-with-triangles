@@ -22,7 +22,7 @@ document.getElementById("type3").addEventListener("change", () => {
 	toggleForm(2, 1, 0);
 });
 
-function toggleForm(showDiv, hideDiv1, hideDiv2) {
+const toggleForm = (showDiv, hideDiv1, hideDiv2) => {
 	areaForms[showDiv].style.display = "block";
 	areaForms[hideDiv1].style.display = "none";
 	areaForms[hideDiv2].style.display = "none";
